@@ -1,4 +1,4 @@
-ALGORITHM distinctElement
+ALGORITHM sentence
 
 VAR 
  SENTENCE_LENGTH : INTEGER := 0;
