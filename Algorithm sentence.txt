@@ -1,0 +1,32 @@
+ALGORITHM distinctElement
+
+VAR 
+ SENTENCE_LENGTH : INTEGER := 0;
+ VOWEL_NUM : INTEGER := 0;
+ WORD_NUM : INTEGER := 0;
+ SENTENCE : STRING := "The first test sentence in js."
+
+BEGIN
+
+
+FOR i FROM 0 TO SENTENCE.length STEP step  DO 
+    SENTENCE_LENGTH++
+   
+
+IF ( SENTENCE[i] = " ") THEN
+
+    WORD_NUM++
+END IF 
+
+
+IF ( SENTENCE[i] = "a" or SENTENCE[i] = "e" or SENTENCE[i] = "i" or SENTENCE[i] = "o" or SENTENCE[i] = "u" or SENTENCE[i] = "A" or SENTENCE[i] = "E" or SENTENCE[i] = "I" or SENTENCE[i] = "O" or SENTENCE[i] = "U" ) THEN
+
+    VOWEL_NUM++
+END IF 
+
+END_FOR
+
+   Write(SENTENCE_LENGTH)
+   Write(VOWEL_NUM)
+   Write(WORD_NUM)
+END
